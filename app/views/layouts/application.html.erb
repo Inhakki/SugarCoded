@@ -3,12 +3,14 @@
 <head>
   <title>SugarCoded</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
 <body>
+  <h1>D3 Primer</h1>
 
+  <div id="graph"></div>
+  <p><button id="refresh">Refresh</button></p>
 <%= yield %>
-
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
 </body>
 </html>
